@@ -1,5 +1,7 @@
 # NLP
-Started with how inner products can lead us quantify document similarity.
+Originally wrote this to learn how Python dictionaries work. 
+Ended up using them to build word frequency vectors from documents, which 
+naturally led to the geometric notion of cosine similarity to compare them.
 
 ---
 
@@ -22,7 +24,8 @@ I have a bunch of for loops so that can't be good)
 **Approach:**
 1. Convert each document into a word frequency vector
 (This is the bulk of the task the math is very basic, getting the
-text in the suitable form , removing punctuations ,setting the case etc)
+text in the suitable form , removing punctuations ,setting the case etc was 
+the hard part for me)
 3. Compute the cosine similarity between the two vectors:
 
 ```math
