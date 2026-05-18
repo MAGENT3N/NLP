@@ -28,9 +28,9 @@ PUNCTUATION = '.!?,-:;'
 """
 def main():
     # first txt file
-    para_1 = get_word_counts('mov.txt')
+    para_1 = get_word_counts('mov_para_1.txt')
     # Second txt file
-    para_2 = get_word_counts('move_para_2.txt')
+    para_2 = get_word_counts('mov_para_2.txt')
     # Creating the word counts to freq vectors of each text
     vector_para_1 , vector_para_2 = frequency_vector(para_1, para_2)
     print(vector_para_1)
