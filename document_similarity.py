@@ -89,23 +89,41 @@ def get_word_counts(file_name):
    Now the dimensions are matched
 """
 def frequency_vector(counts_1 , counts_2):
-    all_words = {}
+    # Using set method for taking the union of the individual dictionaries
+
+    common_words = set(counts_1.keys())| set(counts_2.keys())
+    # Unpacking the common_words dictionary for getting the freq count
+    #...taking the union of the keys of the count dictionaries
     vector_1 = []
     vector_2 = []
-    for key in counts_1:
-        all_words[key] = counts_1[key]
-    for key in counts_2:
-        all_words[key] = counts_2[key]
-    for key in all_words:
+    for key in common_words:
         if key in counts_1:
             vector_1.append(counts_1[key])
-        else :
+        else:
             vector_1.append(0)
         if key in counts_2:
             vector_2.append(counts_2[key])
         else:
             vector_2.append(0)
-    return vector_1 , vector_2
+    return vector_1,vector_2
+    
+    # all_words = {}
+    # vector_1 = []
+    # vector_2 = []
+    # for key in counts_1:
+    #     all_words[key] = counts_1[key]
+    # for key in counts_2:
+    #     all_words[key] = counts_2[key]
+    # for key in all_words:
+    #     if key in counts_1:
+    #         vector_1.append(counts_1[key])
+    #     else :
+    #         vector_1.append(0)
+    #     if key in counts_2:
+    #         vector_2.append(counts_2[key])
+    #     else:
+    #         vector_2.append(0)
+    # return vector_1 , vector_2
             
     
 
