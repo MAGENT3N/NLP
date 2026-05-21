@@ -37,6 +37,15 @@ the frequency counts based on that common dictionary of all words.
 ```math
 \text{similarity} = \frac{A \cdot B}{||A|| \cdot ||B||}
 ```
+## Tf_Idf(Text frequency and Inverse document frequency)
+**File** `tf_idf.py`
+**Concetps:** Redundancy of certain words and giving weightage to unique words
+**What it does:** Frequency vectors will store words which have little weightage in contex
+,tf_idf metric penalizes these words and gives a suitable value which encode the uniqueness
+of the words in the corpus rather than giving a biased value due to words like'the','and' etc
+
+**Approach**
+Built on top of document similarity making and parsing through dictionaries then cosine similarity
 
 **Key insight:** The problem of comparing documents reduces to finding the 
 angle between two vectors — documents with similar word distributions 
