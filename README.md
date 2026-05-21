@@ -10,7 +10,7 @@ a program for calculating the similarity between 2 documents.
 | File | Topic | Description |
 |------|-------|-------------|
 | `document_similarity.py` | Document Similarity | Cosine similarity using word frequency vectors |
-
+| 'tf_idf.py' | Document Similarity | Cosine similarity using tf_idf Metric|
 ---
 
 ## Document Similarity
